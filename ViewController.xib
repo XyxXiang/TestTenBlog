@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="btnLogin" destination="FP9-DP-vP8" id="ttz-wi-P9w"/>
+                <outlet property="btnLogout" destination="grK-HJ-HPv" id="CiC-OE-moh"/>
+                <outlet property="btnSendImg" destination="SHz-w5-H51" id="oQs-GO-DEt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FP9-DP-vP8">
+                    <rect key="frame" x="145" y="62" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="登陆">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionLogin:" destination="-1" eventType="touchUpInside" id="g5C-Gm-GME"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grK-HJ-HPv">
+                    <rect key="frame" x="145" y="117" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="注销">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionLogout:" destination="-1" eventType="touchUpInside" id="UvJ-TN-w2m"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBM-OK-R2x">
+                    <rect key="frame" x="112" y="192" width="90" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="获取主页信息">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionGetInfo:" destination="-1" eventType="touchUpInside" id="8Zz-qA-9Fi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHz-w5-H51">
+                    <rect key="frame" x="100" y="247" width="120" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="发送一条图文状态">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionSendImg:" destination="-1" eventType="touchUpInside" id="M80-ef-fdr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SHz-w5-H51" firstAttribute="top" secondItem="lBM-OK-R2x" secondAttribute="bottom" constant="25" id="7i8-0u-ukZ"/>
+                <constraint firstItem="SHz-w5-H51" firstAttribute="top" secondItem="grK-HJ-HPv" secondAttribute="bottom" constant="100" id="BBK-wZ-pcd"/>
+                <constraint firstAttribute="centerX" secondItem="FP9-DP-vP8" secondAttribute="centerX" id="CGp-mG-yN9"/>
+                <constraint firstItem="grK-HJ-HPv" firstAttribute="top" secondItem="FP9-DP-vP8" secondAttribute="bottom" constant="25" id="NQM-MS-B1V"/>
+                <constraint firstAttribute="centerX" secondItem="lBM-OK-R2x" secondAttribute="centerX" constant="3" id="VxO-MT-V8I"/>
+                <constraint firstAttribute="centerX" secondItem="SHz-w5-H51" secondAttribute="centerX" id="iby-he-yOw"/>
+                <constraint firstItem="FP9-DP-vP8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="62" id="lhq-UE-VMO"/>
+                <constraint firstAttribute="centerX" secondItem="grK-HJ-HPv" secondAttribute="centerX" id="wtA-zE-A5B"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

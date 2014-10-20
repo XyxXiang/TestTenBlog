@@ -6,7 +6,13 @@
 //  Copyright (c) 2014年 LittleX. All rights reserved.
 //
 
+/**
+ *  App Key:801547164
+ *  App Secret:aae8bd9ae1a9e7a9796e3993f1efb661
+ */
+
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @implementation AppDelegate
 
@@ -14,6 +20,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    self.window.rootViewController = [[ViewController alloc] init];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
